@@ -1,6 +1,171 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 2rem 0;
+        }
+        .features, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .features div, .gallery div {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World!!!</h1>
+    <header>
+        <h1>My Project Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to the project page! This page provides detailed information about our dataset and its applications.</p>
+        </section>
+
+        <section id="news" class="section">
+            <h2>News</h2>
+            <ul>
+                <li>2022.08 - Version 2 released with spatial-temporal localization.</li>
+                <li>2022.08 - Updated download methods for dataset access.</li>
+                <li>2021.04 - Challenge hosted with ActivityNet at CVPR'21.</li>
+                <li>2019.11 - Introduction video released.</li>
+                <li>2019.10 - Dataset now available for download.</li>
+            </ul>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <div class="features">
+                <div>
+                    <h3>7 Modalities</h3>
+                    <p>RGB, Keypoints, Acceleration, Gyroscope, Orientation, Wi-Fi, Pressure.</p>
+                </div>
+                <div>
+                    <h3>1900+ Videos</h3>
+                    <p>Untrimmed videos with 1920x1080@30FPS.</p>
+                </div>
+                <div>
+                    <h3>40k+ Instances</h3>
+                    <p>Average length ranges from 3-8 seconds.</p>
+                </div>
+                <div>
+                    <h3>37 Classes</h3>
+                    <p>Daily, Abnormal, Desk work actions.</p>
+                </div>
+                <div>
+                    <h3>5 Scenes</h3>
+                    <p>Free space, Occlusion, Station Entrance, Desk work, Outdoor.</p>
+                </div>
+                <div>
+                    <h3>40 Subjects</h3>
+                    <p>20 female, 20 male.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div>
+                    <h3>Spatial-Temporal Localization</h3>
+                    <p>Crowd Scene in Real World</p>
+                </div>
+                <div>
+                    <h3>Temporal Sequence Example</h3>
+                    <p>Multi-Views & Multi-Scenes</p>
+                </div>
+                <div>
+                    <h3>Sample Clips</h3>
+                    <p>Sample Frames & Modalities</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="downloads" class="section">
+            <h2>Downloads</h2>
+            <p>Dataset publicly available for research purposes.</p>
+            <p>For the entire dataset with annotations, please follow this <a href="your-dataset-link">link</a> for request.</p>
+            <h3>Publications</h3>
+            <p>
+                <code>
+                    @InProceedings{Your_Citation,<br>
+                    author = {Your Name and Collaborators},<br>
+                    title = {Your Dataset Title},<br>
+                    booktitle = {Your Conference},<br>
+                    month = {Month},<br>
+                    year = {Year}<br>
+                    }
+                </code>
+            </p>
+            <h3>Terms of Use</h3>
+            <ol>
+                <li>The usage of this dataset is limited to academic research ONLY.</li>
+                <li>Disclosure is only allowed for demonstration in academic publications and presentations.</li>
+                <li>Any distribution of this dataset is prohibited.</li>
+                <li>Any commercial usage of this dataset is prohibited.</li>
+                <li>Violation of terms will result in cancellation of the usage license.</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Project Page. All rights reserved.</p>
+    </footer>
 </body>
 </html>
